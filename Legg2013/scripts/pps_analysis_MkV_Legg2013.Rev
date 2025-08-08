@@ -1,0 +1,21 @@
+## EMPIRICAL MCMC
+inFile = "data/Legg2013.nex"
+analysis_name = "pps_morpho_arthropods_Legg"
+morpho <- readDiscreteCharacterData(inFile)
+model_name = "MkV"
+num_states ="10"
+model_file_name = "scripts/"+model_name+"_Model.Rev"
+source("scripts/pps_MCMC.Rev")
+clear()
+
+## POSTERIOR PREDICTIVE DATA SIMULATION
+inFile = "data/Legg2013.nex"
+analysis_name = "pps_morpho_arthropods_Legg"
+morpho <- readDiscreteCharacterData(inFile)
+model_name = "MkV"
+num_states ="10"
+model_file_name = "scripts/"+model_name+"_Model.Rev"
+source("scripts/pps_Simulation.Rev")
+clear()
+
+q()

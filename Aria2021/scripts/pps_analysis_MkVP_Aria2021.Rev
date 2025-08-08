@@ -1,0 +1,21 @@
+## EMPIRICAL MCMC
+inFile = "data/Aria2021.nex"
+analysis_name = "pps_morpho_arthropods_Aria"
+morpho <- readDiscreteCharacterData(inFile)
+model_name = "MkVP"
+num_states ="7"
+model_file_name = "scripts/"+model_name+"_Model.Rev"
+source("scripts/pps_MCMC.Rev")
+clear()
+
+## POSTERIOR PREDICTIVE DATA SIMULATION
+inFile = "data/Aria2021.nex"
+analysis_name = "pps_morpho_arthropods_Aria"
+morpho <- readDiscreteCharacterData(inFile)
+model_name = "MkVP"
+num_states ="7"
+model_file_name = "scripts/"+model_name+"_Model.Rev"
+source("scripts/pps_Simulation.Rev")
+clear()
+
+q()

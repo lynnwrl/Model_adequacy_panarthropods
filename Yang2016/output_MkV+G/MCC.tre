@@ -1,0 +1,61 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=50;
+	Taxlabels
+		Acinocricus_stichus
+		Actinarctus_doryphorus_Heterotardigrada
+		Aegirocassis_benmoulae
+		Alalcomenaeus_sp_
+		Anomalocaris_canadensis
+		Antennacanthopodia_gracilis
+		Aysheaia_pendunculata
+		Batillipes_pennaki_Heterotardigrada
+		Cardiodictyon_catenulum
+		Chengjiangocaris_kunmingensis
+		Collins_monster_Burgess_Shale
+		Collins_monster_Emu_Bay
+		Collinsium_ciliosum
+		Cricocosmia_jinningensis
+		Diania_cactiformis
+		Echiniscus_testudo_Heterotardigrada
+		Epiperipatus_biolleyi_Peripatidae
+		Euperipatoides_Peripatopsidae
+		Fuxianhuia_xiaoshibaensis
+		Hadranax_augustus
+		Hallucigenia_fortis
+		Hallucigenia_hongmeia
+		Hallucigenia_sparsa
+		Hurdia_victoria
+		Hypsibius_dujardini_Eutardigrada
+		Jianshanopodia_decora
+		Kerygmachela_kierkegaardi
+		Kuamaia_lata
+		Leanchoilia_superlata
+		Limulus_polyphemus
+		Luolishania_longicruris
+		Lyrarapax_unguispinus
+		Macrobiotus_cf__harmsworthi_Eutardigrada
+		Megadictyon_haikouensis
+		Metaperipatus_blainvillei_Peripatopsidae
+		Microdictyon_sinicum
+		Misszhouia_longicaudata
+		Onychodictyon_ferox
+		Onychodictyon_gracilis
+		Opabinia_regalis
+		Orstenotubulus_evamuellerae
+		Pambdelurion_whittingtoni
+		Paucipodia_inermis
+		Peytoia_nathorsti
+		Schinderhannes_bartlesi
+		Siberian_Orsten_tardigrade
+		Tertiapatus_dominicanus
+		Triops_cancriformis
+		Tubiluchus_troglodytes_Priapulida
+		Xenusion_auerswaldae
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R](((((((((((((((((((((((((((Alalcomenaeus_sp_[&index=14,age_95%_HPD={0,0.139601}]:0.000977,Leanchoilia_superlata[&index=13,age_95%_HPD={0,0.146439}]:0.001438)[&index=51,posterior=0.384154,age_95%_HPD={0.006874,0.141982}]:0.034963,(Limulus_polyphemus[&index=15,age_95%_HPD={0,0.092362}]:0.040571,Triops_cancriformis[&index=16,age_95%_HPD={0,0.08714}]:0.052610)[&index=52,posterior=0.522636,age_95%_HPD={0.026257,0.128034}]:0.032837)[&index=53,posterior=0.823569,age_95%_HPD={0.044168,0.172928}]:0.038470,(Kuamaia_lata[&index=17,age_95%_HPD={0,0.19136}]:0.008886,Misszhouia_longicaudata[&index=18,age_95%_HPD={0,0.192209}]:0.009510)[&index=54,posterior=0.766977,age_95%_HPD={0.013571,0.19819}]:0.038673)[&index=55,posterior=0.998003,age_95%_HPD={0.063316,0.227626}]:0.119152,(Chengjiangocaris_kunmingensis[&index=19,age_95%_HPD={0.083005,0.376381}]:-0.007156,Fuxianhuia_xiaoshibaensis[&index=20,age_95%_HPD={0.079482,0.368456}]:-0.006605)[&index=56,posterior=0.683755,age_95%_HPD={0.0807,0.367461}]:0.045774)[&index=57,posterior=1.000000,age_95%_HPD={0.14941,0.393315}]:0.266076,Lyrarapax_unguispinus[&index=25,age_95%_HPD={0.237778,0.693107}]:0.056052)[&index=58,posterior=0.502663,age_95%_HPD={0.350585,0.703249}]:0.011213,Anomalocaris_canadensis[&index=26,age_95%_HPD={0.262775,0.721627}]:0.050580)[&index=59,posterior=0.723036,age_95%_HPD={0.370151,0.749093}]:0.027206,Schinderhannes_bartlesi[&index=22,age_95%_HPD={0.24117,0.749744}]:0.049582)[&index=60,posterior=0.407457,age_95%_HPD={0.375407,0.766113}]:0.036533,(Aegirocassis_benmoulae[&index=24,age_95%_HPD={0.275351,0.77867}]:0.002685,Peytoia_nathorsti[&index=23,age_95%_HPD={0.270838,0.763071}]:0.005547)[&index=61,posterior=0.585220,age_95%_HPD={0.28161,0.764543}]:0.059643)[&index=62,posterior=0.501997,age_95%_HPD={0.416777,0.826257}]:0.004490,Hurdia_victoria[&index=21,age_95%_HPD={0.324374,0.844398}]:0.044052)[&index=63,posterior=0.936085,age_95%_HPD={0.383966,0.83663}]:0.060420,Opabinia_regalis[&index=12,age_95%_HPD={0.354703,0.866996}]:0.051142)[&index=64,posterior=0.999334,age_95%_HPD={0.403865,0.912736}]:0.069134,Pambdelurion_whittingtoni[&index=27,age_95%_HPD={0.452877,0.989973}]:0.020756)[&index=65,posterior=0.978695,age_95%_HPD={0.499649,1.03436}]:0.048201,Kerygmachela_kierkegaardi[&index=28,age_95%_HPD={0.480931,1.0295}]:0.022836)[&index=66,posterior=0.811585,age_95%_HPD={0.508136,1.05979}]:0.035687,Hadranax_augustus[&index=42,age_95%_HPD={0.487312,1.05609}]:0.047421)[&index=67,posterior=0.999334,age_95%_HPD={0.535829,1.087}]:0.076326,(((((Actinarctus_doryphorus_Heterotardigrada[&index=35,age_95%_HPD={0.409989,1.03702}]:0.009984,Echiniscus_testudo_Heterotardigrada[&index=36,age_95%_HPD={0.404354,1.03085}]:0.010285)[&index=68,posterior=0.997337,age_95%_HPD={0.421516,1.04795}]:0.038691,Batillipes_pennaki_Heterotardigrada[&index=34,age_95%_HPD={0.404812,1.0231}]:0.029084)[&index=69,posterior=0.996671,age_95%_HPD={0.447133,1.07073}]:0.037791,Macrobiotus_cf__harmsworthi_Eutardigrada[&index=33,age_95%_HPD={0.493284,1.10958}]:0.006012)[&index=70,posterior=0.214381,age_95%_HPD={0.53166,1.08601}]:0.017301,Hypsibius_dujardini_Eutardigrada[&index=32,age_95%_HPD={0.491181,1.10939}]:0.024198)[&index=71,posterior=0.825566,age_95%_HPD={0.522745,1.13635}]:0.043179,Siberian_Orsten_tardigrade[&index=30,age_95%_HPD={0.529974,1.15514}]:0.025876)[&index=72,posterior=0.998668,age_95%_HPD={0.564681,1.1829}]:0.039674)[&index=73,posterior=0.476698,age_95%_HPD={0.591349,1.15608}]:0.074225,(((Jianshanopodia_decora[&index=10,age_95%_HPD={0.495714,1.08778}]:0.013929,Megadictyon_haikouensis[&index=11,age_95%_HPD={0.485031,1.08681}]:0.011711)[&index=74,posterior=0.966045,age_95%_HPD={0.500368,1.08972}]:0.042357,Aysheaia_pendunculata[&index=29,age_95%_HPD={0.6057,1.2217}]:-0.025913)[&index=75,posterior=0.272304,age_95%_HPD={0.586069,1.13741}]:0.027445,(Cricocosmia_jinningensis[&index=38,age_95%_HPD={0.544797,1.17664}]:0.028241,Tubiluchus_troglodytes_Priapulida[&index=39,age_95%_HPD={0.497141,1.11579}]:0.037594)[&index=76,posterior=0.969374,age_95%_HPD={0.55745,1.17606}]:0.033968)[&index=77,posterior=0.621838,age_95%_HPD={0.5919,1.16653}]:0.080977)[&index=78,posterior=0.593209,age_95%_HPD={0.644712,1.24157}]:0.026328,Onychodictyon_ferox[&index=9,age_95%_HPD={0.581759,1.21208}]:0.075744)[&index=79,posterior=0.975366,age_95%_HPD={0.705034,1.3253}]:0.070653,Xenusion_auerswaldae[&index=8,age_95%_HPD={0.739925,1.36354}]:0.028084)[&index=80,posterior=0.243009,age_95%_HPD={0.7535,1.36581}]:0.000507,Diania_cactiformis[&index=6,age_95%_HPD={0.709933,1.34423}]:0.040250)[&index=81,posterior=0.323569,age_95%_HPD={0.760716,1.38226}]:0.006820,Onychodictyon_gracilis[&index=7,age_95%_HPD={0.740205,1.37559}]:0.025475)[&index=82,posterior=0.983356,age_95%_HPD={0.762251,1.38815}]:0.031698,Paucipodia_inermis[&index=37,age_95%_HPD={0.743974,1.38597}]:0.041616)[&index=83,posterior=0.878828,age_95%_HPD={0.796666,1.42966}]:0.025071,Microdictyon_sinicum[&index=40,age_95%_HPD={0.804643,1.43762}]:0.012481)[&index=84,posterior=0.920772,age_95%_HPD={0.802035,1.43894}]:0.029715,Cardiodictyon_catenulum[&index=41,age_95%_HPD={0.817315,1.46662}]:0.016633)[&index=85,posterior=0.998668,age_95%_HPD={0.832178,1.48083}]:0.047583,(((((((Euperipatoides_Peripatopsidae[&index=44,age_95%_HPD={0.658397,1.32476}]:-0.003220,Metaperipatus_blainvillei_Peripatopsidae[&index=45,age_95%_HPD={0.645027,1.30757}]:-0.004026)[&index=86,posterior=0.517976,age_95%_HPD={0.664872,1.33801}]:0.020856,Epiperipatus_biolleyi_Peripatidae[&index=46,age_95%_HPD={0.640268,1.30693}]:0.018562)[&index=87,posterior=0.956724,age_95%_HPD={0.645174,1.31596}]:0.032125,Tertiapatus_dominicanus[&index=43,age_95%_HPD={0.675723,1.34715}]:0.018888)[&index=88,posterior=0.999334,age_95%_HPD={0.682672,1.35445}]:0.077467,Antennacanthopodia_gracilis[&index=47,age_95%_HPD={0.700141,1.38367}]:0.015718)[&index=89,posterior=0.947403,age_95%_HPD={0.7701,1.45152}]:0.031133,Orstenotubulus_evamuellerae[&index=31,age_95%_HPD={0.801186,1.49362}]:0.014014)[&index=90,posterior=0.838881,age_95%_HPD={0.810131,1.47969}]:0.021705,Hallucigenia_sparsa[&index=48,age_95%_HPD={0.729141,1.40902}]:0.039621)[&index=91,posterior=0.352197,age_95%_HPD={0.796799,1.45358}]:0.015825,Hallucigenia_fortis[&index=49,age_95%_HPD={0.819259,1.49843}]:0.020680)[&index=92,posterior=0.902796,age_95%_HPD={0.832298,1.50167}]:0.045966)[&index=93,posterior=0.930759,age_95%_HPD={0.868826,1.54326}]:0.039155,Hallucigenia_hongmeia[&index=50,age_95%_HPD={0.867201,1.54993}]:0.018334)[&index=94,posterior=0.997337,age_95%_HPD={0.912315,1.60095}]:0.082923,(Collins_monster_Burgess_Shale[&index=3,sampled_ancestor=0.000666,age_95%_HPD={0.933073,1.63452}]:0.008045,Collinsium_ciliosum[&index=2,age_95%_HPD={0.934753,1.64477}]:0.008617)[&index=95,posterior=0.836218,age_95%_HPD={0.957618,1.66234}]:0.049031)[&index=96,posterior=0.369507,age_95%_HPD={0.985467,1.70197}]:0.011623,Collins_monster_Emu_Bay[&index=1,age_95%_HPD={0.937211,1.6657}]:0.033206)[&index=97,posterior=0.251664,age_95%_HPD={1.02142,1.72128}]:0.000251,Acinocricus_stichus[&index=5,age_95%_HPD={0.944292,1.66409}]:0.041955,Luolishania_longicruris[&index=4,age_95%_HPD={0.934413,1.66055}]:0.037792)[&index=98,posterior=1.000000,age_95%_HPD={0.980047,1.70214}]:0.000000;
+End;

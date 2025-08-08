@@ -1,0 +1,58 @@
+# 若琳修改的版本，已完成。
+
+# helper variables
+taxa <- morpho.names()
+num_taxa <- taxa.size()
+num_branches <- 2 * num_taxa - 3
+
+moves = VectorMoves()
+
+
+##############
+# Tree model #
+##############
+
+br_len_lambda ~ dnExp(0.2)
+moves.append(mvScale(br_len_lambda, weight=2))
+
+phylogeny ~ dnUniformTopologyBranchLength(taxa, branchLengthDistribution=dnExponential(br_len_lambda))
+
+moves.append(mvNNI(phylogeny, weight=num_branches/2.0))
+moves.append(mvSPR(phylogeny, weight=num_branches/10.0))
+moves.append(mvBranchLengthScale(phylogeny, weight=num_branches))
+
+tree_length := phylogeny.treeLength()
+
+
+######################
+# Substitution Model #
+######################
+
+#### specify the Jukes-Cantor substitution model applied uniformly to all sites ###
+Q := fnJC(int(num_states)) 
+# 选择合适的状态数 num_states， 这个数字在main script（例如pps_analysis_Mk.Rev）里要手动预设
+# 然后设置Mk 模型的 Q 矩阵（Jukes-Cantor）
+
+
+###################
+# PhyloCTMC Model #
+###################
+
+# 进化模型：MkV
+m_morph ~ dnPhyloCTMC(tree=phylogeny, Q=Q, type="Standard", coding="variable") # MkV的V就是这个variable
+
+# 数据绑定
+m_morph.clamp(morpho)
+
+
+#############
+# THE Model #
+#############
+
+# We define our model.
+# We can use any node of our model as a handle, here we chose to use the rate matrix.
+mymodel = model(phylogeny)
+
+
+
+
