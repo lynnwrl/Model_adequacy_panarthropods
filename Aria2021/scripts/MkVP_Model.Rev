@@ -40,10 +40,9 @@ for (i in 2:n_max_states) {
         m_morph[idx] ~ dnPhyloCTMC( tree=phylogeny,
                                     Q=q[idx],
                                     nSites=nc,
-                                   #siteRates=rates_morpho,    # 无Gamma不需要这
-                                    type="Standard"，            
-                                    coding = "variable"        # 记得这里要写coding=variable，因为是MkV
-                                    )                          # create model of evolution for the character block
+                                    type="Standard",            
+                                    coding = "variable")        # 记得这里要写coding=variable，因为是MkV; #siteRates=rates_morpho,    # 无Gamma不需要这
+                                                                # create model of evolution for the character block
 
         m_morph[idx].clamp(morpho_bystate[i])                  # attach the data
 
